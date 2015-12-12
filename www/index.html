@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="assets/lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link
+      href="assets/lib/bower_components/ionic-material/dist/ionic.material.min.css"
+      rel="stylesheet">
+      <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+      <link href="css/ionic.app.css" rel="stylesheet">
+      -->
+
+
+      <!-- CSS -->
+      <link href="assets/css/home.css" rel="stylesheet">
+
+      <!-- ionic/angularjs js -->
+      <script src="assets/lib/ionic/js/ionic.bundle.js"></script>
+      
+
+      <!-- ///////////// bower_components ///////////// -->
+      <script
+      src="assets/lib/bower_components/ionic-material/dist/ionic.material.min.js">
+      </script>
+
+      <!-- Leaflet Related Lib -->
+      <script
+      src="assets/lib/bower_components/leaflet/dist/leaflet.js">
+      </script>
+      <script
+      src="assets/lib/bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.min.js">
+      </script>
+      <link rel="stylesheet" type="text/css" href="assets/lib/bower_components/leaflet/dist/leaflet.css">
+
+      <!-- ///////////// bower_components ///////////// -->
+      
+
+      <!-- cordova script (this will be a 404 during development) -->
+      <script src="cordova.js"></script>
+      
+      <!-- your app's js -->
+      
+      <!-- Controllers -->
+      <script src="src/components/home/home.controller.js"></script>
+      <script src="src/components/map/map.controller.js"></script>
+      
+      <!-- Services -->
+      <script src="src/components/map/map.service.js"></script>
+
+      <!-- Main Modules -->
+      <script src="src/app.module.js"></script>
+      <script src="src/app.routes.js"></script>
+    </head>
+    <body ng-app="discover-area">
+      <ion-nav-view></ion-nav-view>
+    </body>
+
+
+    <!-- Google Place API -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+  </html>

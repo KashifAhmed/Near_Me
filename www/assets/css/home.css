@@ -1,0 +1,5 @@
+.list .item .place-name{
+	position: absolute;
+	bottom: 10px;
+	padding-left: 8px;
+}

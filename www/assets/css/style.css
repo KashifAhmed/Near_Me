@@ -1,0 +1,7 @@
+/* Empty. Add your own CSS if you like */
+ion-content>div{
+	height: 100%;
+}
+ion-content .angular-leaflet-map{
+	height: 100%;
+}

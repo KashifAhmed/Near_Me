@@ -1,0 +1,33 @@
+<ion-view>
+<div
+	class="bar bar-header bar-positive">
+	<div class="h1 title title-center light">
+		<i class="ion-earth"></i>
+		Place Search
+	</div>
+</div>
+<ion-content class="has-header">
+<div class="col">
+	
+	
+	<div class="list">
+		<a 
+		class="
+			item 
+			col-33 
+			col-offset-10 
+			inline 
+			no-padding"
+		ng-repeat="place in places"
+		ng-click="viewMarkers(place.key)">
+			<img src="assets/img/placeholder.png" class="col">
+			<div 
+				class="row place-name"
+				>{{place.name}}</div>
+		</a>
+		
+	</div>
+	
+</div>
+</ion-content>
+</ion-view>
