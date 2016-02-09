@@ -1,14 +1,15 @@
 angular.module('discover-area.map', [])
 	.controller('MapController', function(
 		$scope,
-		$ionicHistory,
+		$state,
 		$stateParams,
 		ionicMaterialInk,
 		mapService
 	) {
 		ionicMaterialInk.displayEffect();
 
-
+		$scope.themeColor = $stateParams.themeColor;
+		$scope.placeTypeName = $stateParams.name;
 		var my_location;
 
 		angular.extend($scope, {
@@ -52,7 +53,7 @@ angular.module('discover-area.map', [])
 		});
 
 		$scope.goBack = function() {
-			$ionicHistory.goBack();
+			$state.go('home')
 		}
 
 	});

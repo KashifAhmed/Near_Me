@@ -6,7 +6,7 @@
   </ion-side-menu>
   <ion-side-menu-content>
     <div
-	class="bar bar-header bar-positive">
+	class="bar bar-header bar-positive" ng-style="{'background-color':themeColor}">
       <div
       class="buttons buttons-left header-item">
 		<span
@@ -21,7 +21,7 @@
       <div class="h1 title title-center light">
 		<i class="ion-ios-location">
       </i>
-      School
+      {{placeTypeName}}
       </div>
   </div>
   <ion-content class="has-header" data-tap-disabled="true">

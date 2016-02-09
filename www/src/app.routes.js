@@ -11,7 +11,7 @@ angular.module('discover-area.route', [])
 
 		$stateProvider
 			.state('map', {
-				url: '/map/:key',
+				url: '/map/:key/:name/:themeColor',
 				templateUrl: 'src/components/map/map.html',
 				controller: 'MapController',
 				cache: false

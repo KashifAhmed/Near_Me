@@ -3,3 +3,21 @@
 	bottom: 10px;
 	padding-left: 8px;
 }
+.places-types{
+	height: 150px;
+    padding: 0px;
+    background-color: #3498db;
+}
+.places-types span{
+	position: absolute;
+    bottom: 20px;
+    padding: 0px 20px;
+    font-size: 30px;
+    color: #ffffff;
+    font-style: oblique;
+    font-family: -webkit-pictograph;
+}
+.home-page .bar-header .title{
+	font-size: 20px;
+    font-weight: bold;
+}
