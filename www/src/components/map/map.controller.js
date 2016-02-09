@@ -1,16 +1,19 @@
-angular.module('discover-area.map', [])
+angular.module('near-me.map', [])
 	.controller('MapController', function(
 		$scope,
 		$state,
 		$stateParams,
-		ionicMaterialInk,
 		mapService
 	) {
-		ionicMaterialInk.displayEffect();
+
+
 
 		$scope.themeColor = $stateParams.themeColor;
 		$scope.placeTypeName = $stateParams.name;
-		var my_location;
+
+		var icon_types = ['assets/img/type-1.png', 'assets/img/type-2.png', 'assets/img/type-3.png', 'assets/img/type-4.png'],
+			selectedIconType = icon_types[$stateParams.iconType - 1],
+			my_location;
 
 		angular.extend($scope, {
 			center: {
@@ -18,7 +21,8 @@ angular.module('discover-area.map', [])
 				lng: 0,
 				zoom: 5
 			},
-			markers: {}
+			markers: {},
+			defaultIcon: {}
 		});
 
 		mapService.getLocation(function(location) {
@@ -42,9 +46,16 @@ angular.module('discover-area.map', [])
 							lat: __location.lat,
 							lng: __location.lng,
 							message: marker.name,
+							icon: {
+								iconUrl: selectedIconType,
+								iconSize: [30, 43], // size of the icon
+
+							},
 							focus: false
 						}
 					});
+
+					//$scope.markers.m1.icon.markerColor = 'green'
 
 					$scope.$digest($scope.markers)
 				}

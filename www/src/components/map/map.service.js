@@ -1,4 +1,4 @@
-angular.module('discover-area.map')
+angular.module('near-me.map')
 	.service('mapService', function() {
 
 		return {

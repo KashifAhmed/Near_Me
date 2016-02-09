@@ -1,4 +1,4 @@
-angular.module('discover-area.route', [])
+angular.module('near-me.route', [])
 	.config(function($urlRouterProvider, $stateProvider) {
 		$urlRouterProvider.otherwise("/home");
 
@@ -11,7 +11,7 @@ angular.module('discover-area.route', [])
 
 		$stateProvider
 			.state('map', {
-				url: '/map/:key/:name/:themeColor',
+				url: '/map/:key/:name/:themeColor/:iconType',
 				templateUrl: 'src/components/map/map.html',
 				controller: 'MapController',
 				cache: false
