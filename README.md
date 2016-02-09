@@ -8,7 +8,9 @@
 
 * Pre-Request ionic.
 * For testing in browser run 'ionic serve'.
-* For run on android 
+* For run on android. 
+
+
  >> ionic platform add android / ios
 
 After sucessfully add platfrom then run on your device.
